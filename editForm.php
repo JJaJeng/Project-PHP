@@ -2,9 +2,9 @@
     $title = "แบบฟอร์มแก้ไขข้อมูลพนักงาน";
     require_once "layout/header.php";
     require_once "db/connect.php";
-    require_once "layout/check_admin.php";
-
-    $result = $controller->getDepartment();
+    require_once "layout/check_admin.php"; 
+     
+    $result = $controller->getDepartment(); 
 
 if(!isset($_GET["id"])){
     header("location:index.php");
